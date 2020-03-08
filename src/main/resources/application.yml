@@ -14,9 +14,9 @@ endpoints:
     enabled: true
 
 amqp:
-  url: amqp://ex-aao-ss-0.ex-aao-hdls-svc.syndesis.svc.cluster.local:5672
-  username: tTUgE9q5
-  password: j4pW671u
+  url: amqp://ex-aao-ss-0.ex-aao-hdls-svc.x12-json-db.svc.cluster.local:5672
+  username: J9TJEqw8
+  password: SObO3bGT
 
 #postgresql specific
 postgresql:

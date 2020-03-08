@@ -78,7 +78,7 @@
     </dependency>
     <dependency>
       <groupId>com.tracegroup.transformer</groupId>
-      <artifactId>RedHat.16122019.1.lic</artifactId>
+      <artifactId>RedHat.06032020.1.lic</artifactId>
       <version>1.0.0</version>
       <scope>runtime</scope>
     </dependency>
