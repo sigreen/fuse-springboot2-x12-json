@@ -5,6 +5,8 @@ This project demonstrates consuming a large X12 batch file and splitting it into
 
 ![](images/MAS.png "X12 to JSON to DB Flow")
 
+A video demonstration of the implementation can be found [here](https://youtu.be/fpVxaNnrTOk).
+
 ## Prerequisites
 
 - VSCode 1.4+
