@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="
+       http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://camel.apache.org/schema/spring       http://camel.apache.org/schema/spring/camel-spring.xsd">
+
+    <camelContext xmlns="http://camel.apache.org/schema/spring">
+
+        <route id="consume-x12-file" streamCache="true">
+            <from uri="file:src/data?noop=true" />
+            <log message="Consumed file..." />
+            <to id="_to1" uri="txfrmr:com.tracefinancial.amadeus/SBRRES" />
+            <split id="_split1">
+                <simple>${body}</simple>
+                <to id="route-to-incoming-orders" uri="amqp:queue:incomingJson" />
+            </split>
+        </route>
+    </camelContext>
+
+</beans>

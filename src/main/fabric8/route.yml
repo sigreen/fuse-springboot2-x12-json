@@ -1,0 +1,4 @@
+spec:
+  to:
+    kind: Service
+    name: fuse-springboot2-x12-json

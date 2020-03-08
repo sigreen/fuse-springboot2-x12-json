@@ -1,0 +1,24 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-Application<rest-process-manager>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "org.example.fuse.Application",
+            "projectName": "rest-process-manager",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-Application<fuse75-rest-forwarder>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "org.example.fuse.Application",
+            "projectName": "fuse75-rest-forwarder",
+            "args": ""
+        }
+    ]
+}

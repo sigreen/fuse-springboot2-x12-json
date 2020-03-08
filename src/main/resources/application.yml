@@ -1,0 +1,37 @@
+camel:
+  springboot:
+    # The Camel context name
+    name: FuseSpringBoot2x12JSON
+
+# Binding health checks to a different port
+management:
+  port: 8081
+
+# disable all management enpoints except health
+endpoints:
+  enabled: false
+  health:
+    enabled: true
+
+amqp:
+  url: amqp://ex-aao-ss-0.ex-aao-hdls-svc.syndesis.svc.cluster.local:5672
+  username: tTUgE9q5
+  password: j4pW671u
+
+#postgresql specific
+postgresql:
+  service:
+    name: postgresql
+    database: sampledb
+    username: admin
+    password: password
+    port: 5432
+
+#Database configuration
+spring:
+  datasource:
+    initialization-mode: always
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://${postgresql.service.name}:${postgresql.service.port}/${postgresql.service.database}
+    username: ${postgresql.service.username}
+    password: ${postgresql.service.password}
