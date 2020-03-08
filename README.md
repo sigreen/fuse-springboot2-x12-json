@@ -1,4 +1,4 @@
-->X12 to JSON to DB Processor<br />using Trace Transformer, Fuse & Syndesis<-
+<div style="text-align: center;" markdown="1">X12 to JSON to DB Processor<br />using Trace Transformer, Fuse & Syndesis</div>
 ====================================
 
 This project demonstrates consuming a large X12 batch file and splitting it into multiple JSON transaction messages.  From there, we consume the multiple JSON messages of a queue and insert them as records into a database.
