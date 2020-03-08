@@ -1,4 +1,4 @@
-X12 to JSON to DB Processor using Trace Transformer, Fuse 7.5, and Syndesis
+X12 to JSON to DB Processor <br />using Trace Transformer, Fuse & Syndesis
 ====================================
 
 This project demonstrates consuming a large X12 batch file and splitting it into multiple JSON transaction messages.  From there, we consume the multiple JSON messages of a queue and insert them as records into a database.
@@ -9,7 +9,7 @@ This project demonstrates consuming a large X12 batch file and splitting it into
 
 - VSCode 1.4+
 - OpenShift 4.2+
-- Trace Transformer 7.4.6
+- Trace Transformer 3.7.4
 - Fuse 7.5 Image Streams (template found [here](https://raw.githubusercontent.com/jboss-fuse/application-templates/master/fis-image-streams.json))
 
 Firstly, start by downloading the registy key from [here](https://access.redhat.com/terms-based-registry/).  You will need a redhat.com login for this.  Create a new Registry Service Account for your OpenShift environment and import it using the following command:
